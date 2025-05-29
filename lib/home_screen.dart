@@ -16,6 +16,7 @@ class HomeScreen extends StatelessWidget {
               buildAlignmentSection(context),
               buildTypographySection(context),
               buildLayoutSection(context),
+              buildBoxSection(context),
             ],
           ),
         ),
@@ -387,9 +388,9 @@ buildLayoutSection(BuildContext context) {
         child: Text(
           "Layout",
           style: TextStyle(
-          fontWeight: FontWeight.w700,
-          fontSize: 20,
-          color: Colors.black,
+            fontWeight: FontWeight.w700,
+            fontSize: 20,
+            color: Colors.black,
           ),
         ),
       ),
@@ -399,31 +400,62 @@ buildLayoutSection(BuildContext context) {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              Container(
-                margin: EdgeInsets.only(bottom: 24),
-                color: Colors.lightGreen,
-                width: MediaQuery.of(context).size.width ,
-                height: 55,
-              ),
+            Container(
+              margin: EdgeInsets.only(bottom: 24),
+              color: Colors.lightGreen,
+              width: MediaQuery.of(context).size.width,
+              height: 55,
+            ),
 
-              Container(
-                margin: EdgeInsets.only(bottom: 24),
-                color: Colors.lightGreen,
-                width: (MediaQuery.of(context).size.width - 48) / 2,
-                height: 55,
-              ),
+            Container(
+              margin: EdgeInsets.only(bottom: 24),
+              color: Colors.lightGreen,
+              width: (MediaQuery.of(context).size.width - 48) / 2,
+              height: 55,
+            ),
 
-
-               Container(
-                margin: EdgeInsets.only(bottom: 24),
-                color: Colors.lightGreen,
-                width: (MediaQuery.of(context).size.width - 48) / 4,
-                height: 55,
-              ),
-  
-             ],
+            Container(
+              margin: EdgeInsets.only(bottom: 24),
+              color: Colors.lightGreen,
+              width: (MediaQuery.of(context).size.width - 48) / 4,
+              height: 55,
+            ),
+          ],
         ),
-      )
-    ]
+      ),
+    ],
+  );
+}
+
+buildBoxSection(BuildContext context) {
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Padding(
+        padding: EdgeInsets.only(top: 16, bottom: 16, left: 24),
+        child: Text(
+          "Box Section",
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 20,
+            color: Colors.black,
+          ),
+        ),
+      ),
+      Container(
+        padding: EdgeInsets.all(24),
+        color: Colors.grey,
+        height: 390,
+        // width: MediaQuery.of(context).size.width,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Align(alignment: Alignment.bottomRight,
+            child: Container(height: 100, color: Colors.yellow)
+            ),
+            Container(height: 100, color: Colors.blue),
+            Container(height: 100, color: Colors.purpleAccent),]),
+      ),
+    ],
   );
 }

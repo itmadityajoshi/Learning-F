@@ -12,6 +12,8 @@ class DemoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: HomeScreen(),
+      title: "Learning",
+      debugShowCheckedModeBanner: false,
     );
   }
 

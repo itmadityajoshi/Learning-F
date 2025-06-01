@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_app/screens/TestProvider.dart';
 // import 'package:my_app/screens/home_screen.dart';
-import 'package:my_app/screens/less_full.dart';
+// import 'package:my_app/screens/less_full.dart';
 // import 'package:my_app/screens/login_Screen.dart';
 
 void main() {
@@ -15,18 +15,18 @@ class DemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: Testprovider(),
+      home: Testprovider(),
       title: "Learning",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: GoogleFonts.lato().fontFamily,
       ) ,
-      initialRoute: '/state',
-      routes: {
-      //   '/home' : (context)=> HomeScreen(),
-      //   '/login': (context)=> LoginScreen(),
-        '/state': (context) => MyApp(),
-      }
+      // initialRoute: '/state',
+      // routes: {
+      // //   '/home' : (context)=> HomeScreen(),
+      // //   '/login': (context)=> LoginScreen(),
+      //   '/state': (context) => MyApp(),
+      // }
     );
   }
 

@@ -58,7 +58,7 @@ class _CounterState extends State<Counter> {
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             Text(
-              '${_count}',
+              '$_count',
               style: TextStyle(fontSize: 44, fontWeight: FontWeight.bold),
             ),
 

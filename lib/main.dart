@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_app/screens/Row_column.dart';
-import 'package:my_app/screens/TestProvider.dart';
+// import 'package:my_app/screens/Row_column.dart';
+// import 'package:my_app/screens/TestProvider.dart';
 // import 'package:my_app/screens/home_screen.dart';
 // import 'package:my_app/screens/less_full.dart';
 // import 'package:my_app/screens/login_Screen.dart';
+import 'package:my_app/screens/Listview.dart';
 
 void main() {
-  runApp( DemoApp());
+  runApp(DemoApp());
 }
 
 class DemoApp extends StatelessWidget {
@@ -16,20 +17,16 @@ class DemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: RowColumn(),
+      home: Listview(),
       title: "Learning",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ) ,
+      theme: ThemeData(fontFamily: GoogleFonts.lato().fontFamily),
       // initialRoute: '/state',
-      // routes: {
+      // routes: {r
       // //   '/home' : (context)=> HomeScreen(),
       // //   '/login': (context)=> LoginScreen(),
       //   '/state': (context) => MyApp(),
       // }
     );
   }
-
 }
-
